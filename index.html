@@ -85,7 +85,7 @@
     <!-- <li><a href=”#”>Blog</a></li> -->
     </ul>
    </nav>
-   <div class="page-title">災害伝承碑など</div>
+   <div class="page-title">災害伝承碑などx</div>
   <table border="1" >
     <tbody>
       <tr>
@@ -112,20 +112,20 @@
   </div> 
   <script>
       //ローカルストレージからデータ（タイトル、画像ファイル名、住所、場所の詳細、年代、説明、訪問の有無）の取り出し
-      if (window.localStorage){
-        let json=localStorage.getItem('selected-spot'); //ローカルストレージからキー「selected-spot」で保存したデータを取得
-        let spot_array=JSON.parse(json);  //取得したJSONデータを配列に変換し、配列名をspot_array（任意）とする
-        let [s_title,s_img,s_address,s_address_detail,s_era,s_explanation,s_yesno]=spot_array; //配列の要素を変数に代入
+      //if (window.localStorage){
+        //let json=localStorage.getItem('selected-spot'); //ローカルストレージからキー「selected-spot」で保存したデータを取得
+        //let spot_array=JSON.parse(json);  //取得したJSONデータを配列に変換し、配列名をspot_array（任意）とする
+        //let [s_title,s_img,s_address,s_address_detail,s_era,s_explanation,s_yesno]=spot_array; //配列の要素を変数に代入
         //alert(s_title + ',' + s_img  + ',' + s_address + ',' + s_address_detail + ',' + s_era + ',' + s_explanation + ',' + s_yesno);
-        var e_img=document.getElementById("image2");e_img.src=s_img ;//画像ファイルを更新
-        var e_title=document.getElementById("title");e_title.textContent="名称：" + s_title ; //名称の更新
-        var e_address=document.getElementById("address");e_address.textContent="住所：" + s_address ; //住所の更新
-        var e_address_detail=document.getElementById("address_detail");e_address_detail.textContent="場所の詳細：" + s_address_detail ; //場所の詳細の更新  
-        var e_era=document.getElementById("era");e_era.textContent="年代：" + s_era  ;//年代を更新
-        var e_explanation=document.getElementById("explain");e_explanation.textContent= s_explanation  ;//説明を更新
-      } else {
-        alert('ローカルストレージは使えません')
-      };
+        var e_img=document.getElementById("image"+2);e_img.src="image/ogatama.jpg" ;//画像ファイルを更新
+        //var e_title=document.getElementById("title");e_title.textContent="名称：" + s_title ; //名称の更新
+        //var e_address=document.getElementById("address");e_address.textContent="住所：" + s_address ; //住所の更新
+        //var e_address_detail=document.getElementById("address_detail");e_address_detail.textContent="場所の詳細：" + s_address_detail ; //場所の詳細の更新  
+        //var e_era=document.getElementById("era");e_era.textContent="年代：" + s_era  ;//年代を更新
+        //var e_explanation=document.getElementById("explain");e_explanation.textContent= s_explanation  ;//説明を更新
+      //} else {
+        //alert('ローカルストレージは使えません')
+      //};
     </script>
 </body>
 </html>
